@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN apk update && apk add --no-cache apcupsd
+RUN apk update && apk add --no-cache apcupsd curl
 
 ADD apcupsd.conf /etc/apcupsd/apcupsd.conf
 ADD doshutdown /etc/apcupsd/doshutdown
